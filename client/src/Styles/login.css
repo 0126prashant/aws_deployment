@@ -1,0 +1,88 @@
+/* img{
+        height: 100vh;
+    } */
+    .main-container {
+        /* max-width: 100%; */
+        width: 35%;
+        /* border: 3px solid; */
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8); /* Black with 50% opacity */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 10%;
+      left: 35%;
+    }
+    
+    .loginh2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #ccc;
+    }
+    
+    label {
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+    
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+       
+    }
+    
+    button {
+        width: 100%;  
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        /* cursor: pointer; */
+    }
+    .btn{
+        background-color: red;
+        padding: 10px;
+        margin-top: 50px;
+    }
+    
+    .register-para{
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+      font-size: 20px;
+    }
+    .register-para span{
+      color: #03A9F4;
+    }
+    
+    /* Medium screens */
+    @media all and (min-width: 451px) and (max-width: 750px) {
+        .main-container {
+          width: 50%;
+          left: 25%;
+          
+        }
+        img{
+            height: 100vh;
+        }
+      }
+      
+      /* Small screens */
+      @media all and (min-width: 100px) and (max-width: 450px) {
+        .main-container {
+          width: 70%;
+          left: 15%;
+        }
+        img{
+            height: 100vh;
+        }
+      }
+    

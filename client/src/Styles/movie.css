@@ -1,0 +1,92 @@
+.movie-main{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    background-color: #141414;
+    padding-bottom: 100px;
+
+}
+.movie-card{
+    /* border: 2px solid green; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.movie-card > p{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+.movie-card > img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 400px;
+    width: 100%;
+}
+.movie-card > button{
+    /* border: 2px solid red; */
+    justify-content: center;
+    background-color: #eb868626;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.btn-btn{
+   align-items: center;
+   width: 10%;
+    position: absolute;
+    background-color: #141414;
+    bottom: 10px;
+}
+.btn-btn :nth-child(1){
+    position: absolute;
+    left: 550px;
+    bottom: 20px;
+    background-color: burlywood;
+    color: #141414;
+}
+.btn-btn :nth-child(2){
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 700px;
+    bottom: 20px;
+    background-color: burlywood;
+    color: #141414;
+    
+}
+.youtube-player{
+    /* border: 2px solid red; */
+    width: 50%;
+    position: absolute;
+    top: 50px;
+    left: 2px;
+    z-index: 10;
+    position: fixed;
+}
+.youtube-player > button{
+    background-color: darkorange;
+  }
+
+/* Medium screens */
+@media all and (min-width: 451px) and (max-width: 750px) {
+    .movie-main{
+        width: 100%;
+        /* display: grid; */
+      grid-template-columns: repeat(3,1fr);
+      /* overflow: hidden; */
+    }
+   
+  }
+  /* Small screens */
+  @media all and (min-width: 100px) and (max-width: 450px) {
+  
+    .movie-main{
+      grid-template-columns: repeat(1,1fr);
+      overflow: hidden;
+    }
+  }
+  
+  

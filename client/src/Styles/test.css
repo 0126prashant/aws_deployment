@@ -1,0 +1,57 @@
+.navbar-main {
+    background-color: black;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-toggle {
+    display: none; /* Initially hide the menu toggle button */
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .menu-items {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+  }
+  
+  .menu-items.open {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+        border: 2px solid red;
+        size: 60px;
+      display: flex; /* Show the menu toggle button for smaller screens */
+      
+    }
+    .navbar-main img{
+        width: 50px;
+        height: 40px;
+    }
+  
+    .menu-items {
+      display: none; /* Initially hide the menu items for smaller screens */
+    }
+  
+    .menu-items.open {
+      display: flex; /* Show the menu items when menu is open */
+    }
+  }
+  

@@ -1,0 +1,165 @@
+.carousel {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  /* width: 100%; */
+  margin-top: 50px;
+/* border: 2px solid red; */
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow-x: scroll;
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
+  margin-left: 5rem;
+}
+/* ----------------------------different appp---------- */
+.carousel::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.carousel::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+}
+/* ----------------------------different appp---------- */
+
+.carousel-cell {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  scroll-snap-align: start;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+.hidden {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  top:20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-cell:hover  {
+  transform: scale(1.30);
+  z-index: 5;
+  /* border: 2px solid red; */
+}
+.carousel-cell:hover .hidden {
+  display: block;
+  
+}
+
+
+
+.carousel-cell img {
+  width: 100%;
+  height: 250px;
+  /* border-radius: 10px; */
+}
+.icons{
+  display: flex;
+  gap: 15px;
+  color: white;
+  margin: 10px;
+  /* font-size: 30px; */
+  font-size: 35px;
+  
+}
+.icn{
+  padding: 5px;
+}
+.brdr{
+  border: 3px solid grey;
+  border-radius: 50%;
+}
+
+
+
+.carousel h2{
+  color: #fff;
+  margin-left: 10px;
+  margin-bottom: 7px;
+  /* border: 1px solid red; */
+  font-weight: 20px;
+  font-size: 22px;
+  /* white-space: nowrap; */
+  
+}
+.green{
+  color: #53d853;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.gener{
+  color: white;
+  margin-left: 10px;
+}
+/* model-------------------- */
+.custom-modal{
+  margin: auto;
+  width: 60%;
+  margin-top: 5%;
+  height: 60vh;
+  
+}
+
+.custom-modal  img{
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 65vh;
+  /* -webkit-object-fit: fill;
+    object-fit: fill;
+    -webkit-mask-image: -webkit-gradient(linear,left top,left bottom,color-stop(86%,#141414),to(transparent));
+    -webkit-mask-image: -webkit-linear-gradient(top,#141414 36%,transparent);
+    mask-image: -webkit-gradient(linear,left top,left bottom,color-stop(86%,#141414),to(transparent));
+    mask-image: linear-gradient(180deg,#141414 86%,transparent); */
+}
+.custom-modal  p{
+  /* border: 2px solid red; */
+  /* color: green;
+  position: absolute;
+  top: 460px;
+  left: 270px;
+  font-size: 15px;
+  width: 60%; */
+  /* white-space: nowrap; */
+  border:2px solid black;
+  background-color: #141414;
+  color: #fff;
+  
+}
+.close-button{
+  color: #141414;
+  position: absolute;
+  top: 100px;
+  left: 64rem;
+  font-size: 40px;
+}
+/* model-------------------- */
+
+
+
+.youtube-player-crausel{
+  width: 50%;
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    z-index: 10;
+    position: fixed;
+    z-index:8; 
+      position: fixed;
+      top: 100px;
+      left: 400px;
+}
+.youtube-player-crausel > button{
+  background-color: darkorange;
+}

@@ -1,0 +1,9 @@
+.horror_main{
+    background-color: #141414;
+}
+.horror_main h1{
+    position: absolute;
+    font-size: 30px;
+    left: 80px;
+    color: #fff; 
+}

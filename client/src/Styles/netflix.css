@@ -1,0 +1,128 @@
+.carousel_netflix{
+    display: flex;
+    scroll-snap-type: x mandatory;
+    /* width: 100%; */
+    margin-top: 50px;
+  /* border: 2px solid red; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow-x: scroll;
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
+    margin-left: 5rem;
+  }
+  h1{
+    position: absolute;
+    font-size: 30px;
+    left: 80px;
+    color: #fff; 
+}
+  /* ----------------------------different appp---------- */
+  .carousel_netflix::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  .carousel_netflix::-webkit-scrollbar-track {
+    background-color: transparent; 
+  }
+  
+  .carousel_netflix::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+  }
+  /* ----------------------------different appp---------- */
+  
+  .carousel-cell_netflix {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    scroll-snap-align: start;
+    width: 280px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  .hidden_netflix{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    top:60%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .carousel-cell_netflix:hover  {
+    transform: scale(1.10);
+    z-index: 5;
+    /* border: 2px solid red; */
+  }
+  .carousel-cell_netflix:hover .hidden_netflix {
+    display: block;
+    
+  }
+  
+  
+  
+  .carousel-cell_netflix img {
+    width: 100%;
+    height: 450px;
+    /* border-radius: 10px; */
+  }
+  .icons{
+    display: flex;
+    gap: 15px;
+    color: white;
+    margin: 10px;
+    /* font-size: 30px; */
+    font-size: 35px;
+    
+  }
+  .icn{
+    padding: 5px;
+  }
+  .brdr{
+    border: 3px solid grey;
+    border-radius: 50%;
+  }
+  
+  
+  
+  .carousel h2{
+    color: #fff;
+    margin-left: 10px;
+    margin-bottom: 7px;
+    /* border: 1px solid red; */
+    font-weight: 20px;
+    font-size: 22px;
+    /* white-space: nowrap; */
+    
+  }
+  .green{
+    color: #53d853;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .gener{
+    color: white;
+    margin-left: 10px;
+  }
+  /* model-------------------- */
+  .modal{
+    margin: auto;
+    /* border: 2px solid red; */
+    width: 40%;
+    /* height: 60vh; */
+  }
+  .modal  img{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 60vh;
+  }
+  /* model-------------------- */
+  
+  
+  
+  
