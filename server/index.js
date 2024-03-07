@@ -7,18 +7,27 @@ const app = express()
 require ("dotenv").config();
 app.use(express.json());
 app.use(cors())
+const path = require("path")
+// const _dirname = path.dirname("")
+app.use(express.static(path.join(__dirname, "../client/build")));
 
-// Here are the routes present
+// netflix_aws\client\build
+app.get("/*",(req,res)=>{
+    res.sendFile(
+        path.join(__dirname,"../client/build/index.html"),
+        // path.join(__dirname,"../client/build/index.html"),
+        function(err){
 
-app.get("/",async(req,res)=>{
-
-    try {
-        res.status(200).send("hello from backend")
-    } catch (error) {
-        res.status(400).send({error:error.message})
-    }
+            if(err){
+                res.status(500).send(err)
+            }
+        }
+    )
 
 })
+// Here are the routes present
+
+
 app.use("/users",userRouter)
 app.use("/list",listRouter)
 
